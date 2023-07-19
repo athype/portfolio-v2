@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet"> 
+    <title>Dev server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+            <path 
+              fill-rule="evenodd" 
+              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" 
+              clip-rule="evenodd" 
+              />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- mobile navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line">
+
+          </li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
+                <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+              </svg>
+              
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav__btn btn" href="">Reach Out</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end of mobile navigation -->
+    <main>
+        <section class="hero container">
+          <img class="hero__img" src="/hero.png" alt="Profile picture" />
+          <h2 class="hero__subtitle">Hi, I'm Athy!</h2>
+          <h1 class="hero__title">EDITOR <br> WEB DEVELOPER</h1>
+          <p class="hero__description">A passionate beginner <strong> web developer, photoshop and vfx editor </strong> specialized in making wonderous <strong> websites and edits </strong></p>
+          <a class="hero__btn btn" href="#">Reach out</a>
+        </section>
+        <section id="about" class="about container section">
+          <div class="about__content">
+            <h2 class="about__title">About</h2>
+            <p class="about__description">Hi there! I'm Athy, an editor and amateur <strong>Frontend web developer </strong> based in the Netherlands, originally from Hungary. I am also a university student. I strive to make pretty things, I wake up, drink some good coffee, pet my so far imaginary cat and open up my laptop</p>
+            <p class="about__description">People who know me know that I'm laid back albeit being a bit of a maximalist, I can get very focused on projects</p>
+            <p class="about__description">I have a Youtube channel named <strong>Athype edits</strong> where I upload guides on editing</p>
+            <hr class="about__hr" />
+            <h3 class="about__subtitle">Technologies / Skills</h3>
+            <div class="about__ul-container">
+              <ul class="about__ul">
+                <li class="about__list">Adobe Photoshop</li>
+                <li class="about__list">Adobe After effects</li>
+                <li class="about__list">Trapcode Particular</li>
+              </ul>
+              <ul class="about__ul">
+                <li class="about__list">HTML</li>
+                <li class="about__list">CSS</li>
+                <li class="about__list">Python</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__img-wrapper">
+            <img class="about__img lazy loading" src="https://fakeimg.pl/720" data-src="/about.png" alt="Athype logo" />
+          </div>
+        </section>
+        <section id="featured" class="featured container section">
+          <h3 class="featured__subtitle">Featured Project</h3>
+          <div class="featured__wrapper"> 
+            <h2 class="featured__title">Athype edits</h2>
+            <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z" clip-rule="evenodd" />
+            </svg>
+            </a>
+          </div>
+          <p class="featured__description">Here some of my projects are visible, among with things that I am able to make, a wide variety of edits and websites will be on display, as well as python projects.</p>
+          <div class="featured__info-container">
+            <div>
+              <h3 class="featured__label">Technologies</h3>
+              <ul class="featured__tech-stack">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Vite</li>
+                <li>JS</li>
+                <li>Adobe</li>
+                <li>Trapcode</li>
+                <li>GIF Tech</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="featured__label">Project type</h3>
+              <p class="featured__info">HTML + CSS</p>
+            </div>
+            <div>
+              <h3 class="featured__label">Timeline</h3>
+              <p class="featured__info">2022 October-Present</p>
+            </div>
+          </div>
+          <div class="featured__img-container">
+            <div class="featured__img-wrapper">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/index.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/aboutsite.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/services.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="/contacts.png" alt="placeholder image" />
+            </div>
+<!--             <div class="featured__img-wrapper">
+              <img src="/placeholder.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img src="/placeholder.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img src="/placeholder.png" alt="placeholder image" />
+            </div>
+            <div class="featured__img-wrapper">
+              <img src="/placeholder.png" alt="placeholder image" />
+            </div> -->
+          </div>
+        </section>
+        <section class="work container section">
+          <h2 class="work__title">Projects</h2>
+          <p class="work_description">Here my edit projects are visible, some of these are personal pieces, some are made to order commissions. These are either the most current ones, or pieces I'm especially proud of and satisfied with.</p>
+          <div class="work__container">
+            <!--         project 1 -->
+            <h3 class="work__project-title">Giyu Tomioka Edit</h3>
+            <div class="work__img-wrapper work__image1">
+               <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/giyu.webp" alt="giyu edit"/>
+            </div>
+            <div class="work__project work__content1">
+              <h3 class="work__project-subtitle">Giyu Tomioka Edit</h3>
+              <p class="work__project-description-1">This one is a piece for personal use, originally meant to be sold, but I took a liking to it.</p>
+              <p class="work__project-description-2">The character shown here is Giyu Tomioka from Kimetsu No Yaiba. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+              <a class="btn work__project-btn" href="#">Edit</a>
+            </div>
+            <!--         project 2 -->
+            <h3 class="work__project-title">KDA Edit</h3>
+            <div class="work__img-wrapper work__image2">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/kda1.webp" alt="giyu edit"/>
+            </div>
+            <div class="work__project work__content2">
+              <h3 class="work__project-subtitle">KDA Edit</h3>
+              <p class="work__project-description-1">This one is a piece for commercial use as a commission, I really enjoyed making it.</p>
+              <p class="work__project-description-2">The characters shown here are the members of KDA, Akali, Ahri Kai'sa and Evelynn. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+              <a class="btn work__project-btn" href="#">Edit</a>
+            </div>
+            <!-- https        project 3 -->
+            <h3 class="work__project-title">Wolf Edit</h3>
+            <div class="work__img-wrapper work__image3">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/manhwa.webp" alt="wolf edit"/>
+            </div>
+            <div class="work__project work__content3">
+              <h3 class="work__project-subtitle">Wolf Edit</h3>
+              <p class="work__project-description-1">This one is a piece for commercial use as a commission, I really enjoyed making it.</p>
+              <p class="work__project-description-2">The character shown here is from a Manhwa. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+              <a class="btn work__project-btn" href="#">Edit</a>
+            </div>
+                      <!--         project 4 -->
+            <h3 class="work__project-title">Kiryu Kazuma Edit</h3>
+            <div class="work__img-wrapper work__image4">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/kiryu.webp" alt="Kiryu edit"/>
+            </div>
+            <div class="work__project work__content4">
+              <h3 class="work__project-subtitle">Kiryu Kazuma Edit</h3>
+              <p class="work__project-description-1">This one is a piece for commercial use as a commission, I really enjoyed making it.</p>
+              <p class="work__project-description-2">The character shown here is Kiryu Kazuma from the Yakuza games. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+            </div>
+                                <!--         project 5 -->
+            <h3 class="work__project-title">Revy Rebecca Edit</h3>
+            <div class="work__img-wrapper work__image5">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/revy.webp" alt="revy edit"/>
+            </div>
+            <div class="work__project work__content5">
+              <h3 class="work__project-subtitle">Revy Rebecca Edit</h3>
+              <p class="work__project-description-1">This one is a piece for personal use, I loved enjoyed making it as the series is really close to heart.</p>
+              <p class="work__project-description-2">The character shown here is Revy Rebecca from Black Lagoon. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+            </div>
+                                <!--         project 6 -->
+            <h3 class="work__project-title">Hange Zoe Edit</h3>
+            <div class="work__img-wrapper work__image6">
+              <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/zoe.webp" alt="zoe edit"/>
+            </div>
+            <div class="work__project work__content6">
+              <h3 class="work__project-subtitle">Hange Zoe Edit</h3>
+              <p class="work__project-description-1">This one is a piece for commercial use as a commission, I really enjoyed making it.</p>
+              <p class="work__project-description-2">The character shown here is Hange Zoe from Attack on Titan. The theme was made in Photoshop and AE with the PSD named Bowie. It features my standard animated theme elements, like gifs, particles, character animations.</p>
+              <a class="btn work__project-btn" href="#">Edit</a>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact container section">
+          <h2 class="contact__title">Get In Contact</h2>
+          <p class="contact__description">Whether you are looking for an edit, asking about a style or specific about my designs, have a business inquiry, or just want to say hey, my inbox is always open so feel free to reach out and I will get back to you as soon as possible.</p>
+          <a class="contact_btn btn" href="mailto:athype.edits@gmail.com" target="_blank">Reach Out</a>
+        </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~Athype~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
